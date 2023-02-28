@@ -1,10 +1,16 @@
 package testPrisacaBarnova.testUpperMenu;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import testPrisacaBarnova.BasePageTestsPB;
 
 public class testMenuHomeButton extends BasePageTestsPB {
+
+    @BeforeClass(alwaysRun = true)
+    public void clickHomeButton(){
+        upperMenuPB.menuHomePB();
+    }
 
     @Test(description = "test menu homepage button")
     public void testHomeButton(){
