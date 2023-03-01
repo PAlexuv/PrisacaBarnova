@@ -1,5 +1,6 @@
 package PrisacaBarnova.PageObjects;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.Set;
 
@@ -44,8 +46,10 @@ public class PoBasePagePB {
 
     public void openBrowser(){
         if(browser.equals("chrome")){
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
     }
     public void closeBrowser(){
@@ -69,11 +73,11 @@ public class PoBasePagePB {
     }
 
     public void waitForElement(By locator){
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
     public void waitForElementText(By locator, String text){
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         wait.until(ExpectedConditions.textToBe(locator, text));
     }
 
