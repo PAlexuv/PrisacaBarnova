@@ -3,9 +3,9 @@ package testPrisacaBarnova.testUpperMenu;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import testPrisacaBarnova.BasePageTestsPB;
+import testPrisacaBarnova.BaseTestsPB;
 
-public class testMenuHomeButton extends BasePageTestsPB {
+public class testHomeButton extends BaseTestsPB {
 
     @BeforeClass(alwaysRun = true)
     public void clickHomeButton(){
@@ -14,9 +14,9 @@ public class testMenuHomeButton extends BasePageTestsPB {
 
     @Test(description = "test menu homepage button")
     public void testHomeButton(){
-        String pagetitle = menuHomePB.getHomeTitle();
+        String pagetitle = homePB.getHomeTitle();
         Assert.assertEquals(pagetitle, "Prisaca Barnova - Miere Naturala de Albine");
-        String menuHomeButtonText = menuHomePB.getMenuHomeButtonText();
-        Assert.assertEquals(menuHomeButtonText, "Home");
+        String menuHomeButtonText = homePB.getMenuHomeButtonText();
+        Assert.assertEquals(menuHomeButtonText, "Homee");
     }
 }

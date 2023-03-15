@@ -3,7 +3,7 @@ package testPrisacaBarnova;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class testHomePagePB extends BasePageTestsPB{
+public class testHomePB extends BaseTestsPB {
 
     @Test
     public void testPageTitle(){

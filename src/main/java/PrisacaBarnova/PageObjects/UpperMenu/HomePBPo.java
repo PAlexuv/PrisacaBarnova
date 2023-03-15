@@ -1,11 +1,9 @@
 package PrisacaBarnova.PageObjects.UpperMenu;
 
-import PrisacaBarnova.PageObjects.PoBasePagePB;
+import PrisacaBarnova.PageObjects.BasePoPagePB;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
-public class PoHomePB extends PoBasePagePB {
+public class HomePBPo extends BasePoPagePB {
 
     private By menuHomeButton = By.cssSelector("a[title='Home']");
 
