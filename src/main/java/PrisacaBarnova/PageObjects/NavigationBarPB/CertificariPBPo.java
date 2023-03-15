@@ -1,9 +1,9 @@
 package PrisacaBarnova.PageObjects.NavigationBarPB;
 
-import PrisacaBarnova.PageObjects.PoBasePagePB;
+import PrisacaBarnova.PageObjects.BasePoPagePB;
 import org.openqa.selenium.By;
 
-public class PoCertificariPB extends PoBasePagePB {
+public class CertificariPBPo extends BasePoPagePB {
 
     private By firstCertificate = By.cssSelector("img[title='8']");
     private By displayedFirstCertificate = By.cssSelector("span[class='bwg_popup_image_spun2'] img[alt='8']");

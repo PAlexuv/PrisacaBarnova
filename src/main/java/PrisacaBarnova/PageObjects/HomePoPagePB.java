@@ -2,7 +2,7 @@ package PrisacaBarnova.PageObjects;
 
 import org.openqa.selenium.By;
 
-public class PoHomePagePB extends PoBasePagePB{
+public class HomePoPagePB extends BasePoPagePB {
     private By logo =  By.cssSelector(".logo");
 
     public String getTitle() {
