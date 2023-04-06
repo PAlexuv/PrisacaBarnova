@@ -26,12 +26,22 @@ import java.util.Set;
 
 public class BasePoPagePB {
 
+    // This declares a protected static variable called driver of type WebDriver. It is protected, meaning that it can be accessed by classes within
+    // the same package as well as any subclasses. It is static, meaning that it is a class-level variable that can be accessed without needing to create
+    // an instance of the class first.
     protected static WebDriver driver;
+
+    // This declares a protected static variable called log of type Logger. It is also static, meaning that it is a class-level variable.
+    // It is initialized with the result of calling the getLogger() method of the LogManager class, which returns a Logger object that can be
+    // used for logging messages
     protected static Logger log = LogManager.getLogger();
 
+    //This declares a public static variable called browser of type String. It is public, meaning that it can be accessed from any class,
+    // and static, meaning that it is a class-level variable.
     public String browser;
     public String baseUrl;
     public Properties properties;
+
     public static final String SCREENSHOT_PATH = "C:\\Automation\\IntelliJProjects\\PrisacaBarnova\\SeleniumScreenshots";
     public static DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
