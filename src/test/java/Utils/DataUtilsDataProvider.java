@@ -44,7 +44,7 @@ public class DataUtilsDataProvider extends BaseTestsPB {
         //Our Test cannot work with a Json Array so we need to create a Java String Array
 
         // ******JAVA String Array(Java type) ****** to store JSONArray data(formInfo); the size of the JavaArray is being set the same as the JsonArray
-        String[] dataArray = new String[formInfo.size()];//whatever the size of the array, that is the size of this array here
+        String[] dataArray = new String[formInfo.size()];//whatever the size of the array, that is the size of this array here "dataArray"
 
         //Create a new Json Object (formInfoData) to read each set of data inside JSONArray object
         JSONObject formInfoData;
