@@ -1,0 +1,17 @@
+{
+  "auth info": [
+
+    {
+      "UserField": "userTest",
+      "PasswordField": "passwordTest",
+      "RememberMeCheckbox":"Ține-mă minte"
+    },
+    {
+      "UserField": "userTest2",
+      "PasswordField": "passwordTest2",
+      "RememberMeCheckbox": "Ține-mă minte"
+    }
+
+  ]
+
+}
